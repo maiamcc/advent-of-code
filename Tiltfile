@@ -8,4 +8,4 @@
 py_files = [f.split('/')[-1] for f in listdir('.') if f.endswith('.py')]
 for f in py_files:
 	basename = f.split('.')[0]
-	local_resource(basename, 'python {}'.format(f), deps=[f])
+	local_resource(basename, 'python {}'.format(f), deps=[f, 'utils.py'])
