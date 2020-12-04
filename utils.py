@@ -1,3 +1,3 @@
-def read_file(f):
+def read_file(f, typ=str):
 	with open(f) as infile:
-		return infile.read().strip().split('\n')
+		return [typ(x) for x in infile.read().strip().split('\n')]
