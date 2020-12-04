@@ -1,0 +1,1 @@
+local_resource('day1', 'python ./day1.py', deps=['day1.py'])
