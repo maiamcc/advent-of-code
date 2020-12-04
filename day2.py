@@ -45,7 +45,7 @@ def meets_policy2(pos1, pos2, letter, pword):
 	j = pos2 - 1  # adjust for 0-index
 	in_pos_1 = pword[i] == letter
 	in_pos_2 = pword[j] == letter
-	return (in_pos_1 and not in_pos_2) or (in_pos_2 and not in_pos_1)
+	return in_pos_1 + in_pos_2 == 1
 
 print('PART TWO:')
 # print(meets_policy2(1, 3, 'a', 'abcde'))
