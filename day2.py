@@ -30,7 +30,7 @@ def count_valid(inp, checker):
 			valid += 1
 	return valid
 
-inp = read_file('input2')
+inp = read_file('input/input2')
 
 print('PART ONE:')
 # print(meets_policy1(1, 3, 'a', 'abcde'))

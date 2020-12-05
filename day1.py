@@ -11,7 +11,7 @@ def find_prod(li):
 			return elem * (2020-elem)
 		seen.add(elem)
 
-inp = read_file('input1', typ=int)
+inp = read_file('input/input1', typ=int)
 
 print('PART ONE:', find_prod(inp))
 
@@ -21,7 +21,7 @@ def twosum(li, targ, elem_counts=None):
 		elem_counts = defaultdict(int)
 		for elem in li:
 			elem_counts[elem] += 1
-	
+
 	for elem in li:
 		if targ-elem in elem_counts and (elem != targ-elem or elem_counts[elem] >= 2):
 			return elem, targ-elem
