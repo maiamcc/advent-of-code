@@ -1,5 +1,4 @@
 #! /usr/bin/env python
-from collections import defaultdict
 import re
 
 from utils import read_file
